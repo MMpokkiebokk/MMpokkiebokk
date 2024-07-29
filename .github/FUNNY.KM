@@ -1,0 +1,99 @@
+getgenv().FUNNY_KM = {
+    ["main"] = { -- Do not try to delete or change some of the tables below
+        ["Version"] = "0.0.12.0", -- add Your mousepos settings and autoprediction for JumpOffset 
+        ["Credit"] = "MadeBy mmbok,kdyriz in discord",
+        ["Some"] = "script is skid . lua better some dotlock some lock ... and free rn",
+        ["OtherMousePos"] = {"YourMousePosGameHereIfUCanFindIt"}
+    },
+    ["Uisettings"] = {
+        ["Enabled"] = true,
+        ["KeytoUi"] = "V",
+        ["SizeX"] = 450,
+        ["SizeZ2D"] = 450,
+        ["SizeY"] = 450,
+    },
+        ["BLATANT"] = {
+    ["DOTTARGET"] = true, 
+        },
+        ["DOTSETTINGS"] = {
+            ["Prediction"] = 0.14,
+            ["Offset"] = true,
+            ["OffSetAmount"] = 0.04,
+            ["JumpOffSetAmount"] = 0.04,
+        },
+    ["TargetStrafe"] = {
+        ["Enabled"] = true,
+        ["ViewAtTarget"] = true,
+    --    ["TargetStrafeMethood"] == --wait for update to use
+        ["Speed_REAL"] = 50,
+        ["Speed_X"] = 1,
+        ["Speed_Z"] = 1,
+        ["Distance_X"] = 25,
+        ["Distance_Z"] = 25,
+        ["Height"] = 5,
+       -- ["Untargetmethood"] = "GOTOTARGET" -- BACKOLDPOS , GOTOTARGET , NOTHING wait for update to use
+    },
+    ["DOTVISUAL"] = {
+    ["HIGHLIGHTENABLED"] = true,
+    ["HIGHLIGHTFillColor"] = Color3.fromRGB(199, 110, 255),
+    ["HIGHLIGHTParent"] = game.CoreGui,
+    ["HIGHLIGHTOutlineTransparency"] = 0,
+    ["HIGHLIGHTOutlineColor"] = Color3.new(1, 1, 1),
+    ["HIGHLIGHTFillTransparency"] = 0.5,
+    ["TRACERENABLED"] = true,
+    ["TRACERColor"] = Color3.fromRGB(199, 110, 255),
+    ["TRACERThickness"] = 2,
+    ["TRACERTransparency"] = 1,
+    ["BOXENABLED"] = true,
+    ["BOXMATERIAL"] = Enum.Material.ForceField,
+    ["BOXCOLOR"] = Color3.fromRGB(199, 110, 255),
+    ["BOXSIZE"] = Vector3.new(3.3, 3, 2.8), -- Box Size,
+    ["BOXTRANSPARENCY"] = 0.80,
+    ["DOTENABLED"] = false,
+    ["DOTCOLOR"] = Color3.fromRGB(255, 255, 255),
+    ["DOTSIZE"] = UDim2.new(1, 0, 1, 0),
+    ["DOTTRANSPARENCY"] = 0.40,
+        },
+        ["Resolver"] = {
+            ["Enabled"] = true,
+            ["ResolverMethood"] = "Pivot", -- Pivot, DeltaTime,Recalculator,Calculate
+        },
+        ["miscsettingsaim"] = {
+            --["KEYFORDOTANDCAMLOCK"] = "q", -- soon wydm? i dont support pc rn wait for update to use
+            ["AIMPARTFORDOTANCAM"] = 'UpperTorso',
+            ["Autoprediction"] = true,
+            ["AutopredictionMethood"] = "Calculate", -- Calculate , CalculateDynamic,Recalculator
+            ["Calculatenofti"] = true,
+            ["NoftiCalculateDelay"] = 5,
+            ["DurationNoftiHideDelay"] = 1,
+        },
+        ["CustomPrediction"] = {
+        ["JumpOffSetPing"] = true,
+        },
+        ["JumpOffSetPingCustom"] = {
+            P20 = 0.03,
+            P30 = 0.03,
+            P40 = 0.03,
+            P50 = 0.03,
+            P60 = 0.03,
+            P70 = 0.03,
+            P80 = 0.03,
+            P90 = 0.03,
+            P100 = 0.04,
+            P110 = 0.05,
+            P120 = 0.06,
+            P130 = 0.06,
+            P140 = 0.07,
+            P150 = 0.09,
+            P160 = 0.09,
+            P170 = 0.1,
+            P180 = 0.11,
+            P190 = 0.13,
+            P200 =  0.14,
+        ["MiscFeature"] = {
+            ["CframeMovedirspeed"] = true,
+            ["AmountCFMDspeed"] = 2,
+        },
+    },
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MMpokkiebokk/ki/main/FUNNY_KM.txt%20credit%20to%20kdyriz%20old%20name%20%3A%20mmbok",true))()
