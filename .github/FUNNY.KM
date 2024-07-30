@@ -1,6 +1,6 @@
 getgenv().FUNNY_KM = {
     ["main"] = { -- Do not try to delete or change some of the tables below
-        ["Version"] = "0.0.12.0", -- add Your mousepos settings and autoprediction for JumpOffset 
+        ["Version"] = "0.0.14.0", -- add many to target strafe
         ["Credit"] = "MadeBy mmbok,kdyriz in discord",
         ["Some"] = "script is skid . lua better some dotlock some lock ... and free rn",
         ["OtherMousePos"] = {"YourMousePosGameHereIfUCanFindIt"}
@@ -23,16 +23,46 @@ getgenv().FUNNY_KM = {
         },
     ["TargetStrafe"] = {
         ["Enabled"] = true,
+        ["MethoodStrafe"] = "Csync", -- Normal , Csync
         ["ViewAtTarget"] = true,
-    --    ["TargetStrafeMethood"] == --wait for update to use
+    },
+    ["Normal"] = {
         ["Speed_REAL"] = 50,
         ["Speed_X"] = 1,
         ["Speed_Z"] = 1,
         ["Distance_X"] = 25,
         ["Distance_Z"] = 25,
         ["Height"] = 5,
-       -- ["Untargetmethood"] = "GOTOTARGET" -- BACKOLDPOS , GOTOTARGET , NOTHING wait for update to use
+        ["Untargetmethood"] = "BACKOLDPOS",
     },
+    ---sooon
+    ["Csync"] = {
+        ["Methood_C_sync"] = "Target Strafe C-Sync", -- "Target Strafe C-Sync","Random Target C-Sync"
+    },
+    ["RandomCsyncSettings"] = {
+        ["PositiveRandomDistanceX"] = 15,
+        ["NegativeRandomDistanceX"] = 15,
+
+        ["PositiveRandomDistanceY"] = 15,
+        ["NegativeRandomDistanceY"] = 15,
+
+        ["PositiveRandomDistanceZ"] = 15,
+        ["NegativeRandomDistanceZ"] = 15,
+
+        ["MinX_MaxX"] = 0,360,
+        ["MinY_MaxY"] = 0,360,
+        ["MinZ_MaxZ"] = 0,360,
+    },
+    ["TargetCsyncSettings"] = {
+        ["Csync_Distance_X"] = 15,
+        ["Csync_Distance_Y"] = 15,
+        ["Csync_Distance_Z"] = 15,
+
+        ["Csync_Speed_X"] = 15,
+        ["Csync_Speed_REAL"] = 15,
+        ["Csync_Speed_Z"] = 15,
+    },
+    -------------------------------------
     ["DOTVISUAL"] = {
     ["HIGHLIGHTENABLED"] = true,
     ["HIGHLIGHTFillColor"] = Color3.fromRGB(199, 110, 255),
