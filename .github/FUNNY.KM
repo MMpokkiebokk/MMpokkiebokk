@@ -1,44 +1,56 @@
 getgenv().FUNNY_KM = {
     ["main"] = { -- Do not try to delete or change some of the tables below
-        ["Version"] = "0.0.14.0", -- add many to target strafe
+        ["Version"] = "0.1.20.0",
         ["Credit"] = "MadeBy mmbok,kdyriz in discord",
+        ["Newupdate"] = "Add many to Prediction and many to targetstrafe",
         ["Some"] = "script is skid . lua better some dotlock some lock ... and free rn",
-        ["OtherMousePos"] = {"YourMousePosGameHereIfUCanFindIt"}
+        ["OtherMousePos"] = {"YourMousePosGameHereIfUCanFindIt"},
+        ["Nolog"] = true, -- anti afk
     },
     ["Uisettings"] = {
         ["Enabled"] = true,
         ["KeytoUi"] = "V",
         ["SizeX"] = 450,
         ["SizeZ2D"] = 450,
-        ["SizeY"] = 450,
+        ["SizeY"] = 650,
     },
         ["BLATANT"] = {
     ["DOTTARGET"] = true, 
+
         },
         ["DOTSETTINGS"] = {
             ["Prediction"] = 0.14,
             ["Offset"] = true,
+            ["OffsetHorizontal"] = 0.01,
             ["OffSetAmount"] = 0.04,
             ["JumpOffSetAmount"] = 0.04,
         },
     ["TargetStrafe"] = {
         ["Enabled"] = true,
-        ["MethoodStrafe"] = "Csync", -- Normal , Csync
+        ["MethoodStrafe"] = "Normal", -- Normal , Csync
         ["ViewAtTarget"] = true,
     },
-    ["Normal"] = {
-        ["Speed_REAL"] = 50,
+    -- wait for better update
+    ["Normal"] = { -- soon
+        ["SpeedChoose"] = "BestForHighPing", --BestForHighPing , Ultimatespeed , Normal  (it doesn't affect your speed settings, just makes you better)
+        ["Speed_REAL"] = 1,
         ["Speed_X"] = 1,
         ["Speed_Z"] = 1,
-        ["Distance_X"] = 25,
-        ["Distance_Z"] = 25,
+        ["Distance_X"] = 20,
+        ["Distance_Z"] = 10,
         ["Height"] = 5,
         ["Untargetmethood"] = "BACKOLDPOS",
     },
-    ---sooon
+    -------------------
     ["Csync"] = {
-        ["Methood_C_sync"] = "Target Strafe C-Sync", -- "Target Strafe C-Sync","Random Target C-Sync"
-    },
+        ["Enabled"] = true,
+        ["Methood_C_sync"] = "Target_Strafe_CSync", -- "Target_Strafe_CSync","Random_Target_CSync",Fake_Bullet_Tp,Destroy_Cheaters (wait me want do it goto and back ), Swipex_Csync, Ms_QQ_Csync
+        ["VisualEnabled"] = true,
+            --soon
+            ["SpeedMethoodC_Sync"] = "FollowPingNumbers", -- FollowPingNumbers , MaxSettings , Normal 
+ --soon 
+        },
+
     ["RandomCsyncSettings"] = {
         ["PositiveRandomDistanceX"] = 15,
         ["NegativeRandomDistanceX"] = 15,
@@ -49,9 +61,20 @@ getgenv().FUNNY_KM = {
         ["PositiveRandomDistanceZ"] = 15,
         ["NegativeRandomDistanceZ"] = 15,
 
-        ["MinX_MaxX"] = 0,360,
-        ["MinY_MaxY"] = 0,360,
-        ["MinZ_MaxZ"] = 0,360,
+        ["SpeedRandomTargetStrafeCsyncX"] = 10,
+        ["SpeedRandomTargetStrafeCsyncY"] = 10,
+        ["SpeedRandomTargetStrafeCsyncZ"] = 10
+
+    },
+        ["RandomCsyncSpeedSettings"] = {
+        ["MinX"] = 0,
+        ["MaxX"] = 360,
+        ["MinY"] = 0,
+        ["MaxY"] = 360,
+        ["MinZ"] = 0,
+        ["MaxZ"] = 360,
+        ----
+        ["OnlyNumber"] = 360
     },
     ["TargetCsyncSettings"] = {
         ["Csync_Distance_X"] = 15,
@@ -62,7 +85,19 @@ getgenv().FUNNY_KM = {
         ["Csync_Speed_REAL"] = 15,
         ["Csync_Speed_Z"] = 15,
     },
-    -------------------------------------
+    ["FakeBulletTpSettings"] = {
+        ["Distance"] = 10 ,
+        ["Speed"] = 10 ,
+    },
+    ["SwipeXSettings"] = {
+       ["Height"] = 5,
+       ["SwipeXAmnout"] = 15,
+       ["Speed"] = 5,
+    },
+    ["MSQQ_Settings"] = {
+       ["Distance"] = 10,
+       ["Speed"] = 15
+    },
     ["DOTVISUAL"] = {
     ["HIGHLIGHTENABLED"] = true,
     ["HIGHLIGHTFillColor"] = Color3.fromRGB(199, 110, 255),
@@ -90,36 +125,65 @@ getgenv().FUNNY_KM = {
         },
         ["miscsettingsaim"] = {
             --["KEYFORDOTANDCAMLOCK"] = "q", -- soon wydm? i dont support pc rn wait for update to use
+           
             ["AIMPARTFORDOTANCAM"] = 'UpperTorso',
             ["Autoprediction"] = true,
-            ["AutopredictionMethood"] = "Calculate", -- Calculate , CalculateDynamic,Recalculator
+            ["AutoCustomAndPredictionAutomethoodselect"] = "HighPingUser", -- turn off if 1 or 2 is enabled best from me, methood : Custom , AutoSelectautopredictionOrAutoSelectcustomprediction , HighPingUser (if your ping to low select to custon prediction else high to auto caculate)
+            ["AutopredictionMethood"] = "Distancetoping", -- Selecttheaddedpredictionaddto,Distancetoping,Distancetoset --support all ping but not good (Calculate , CalculateDynamic,Recalculator -- support 10 - 500 ping but not better custom prediction)
             ["Calculatenofti"] = true,
             ["NoftiCalculateDelay"] = 5,
             ["DurationNoftiHideDelay"] = 1,
         },
-        ["CustomPrediction"] = {
-        ["JumpOffSetPing"] = true,
+        ["IfDistancetothen"] = {
+        ["Far"] = 55,
+        ["Mid"] = 25,
+        ["Close"] = 15
         },
-        ["JumpOffSetPingCustom"] = {
-            P20 = 0.03,
-            P30 = 0.03,
-            P40 = 0.03,
-            P50 = 0.03,
-            P60 = 0.03,
-            P70 = 0.03,
+        ["CustomPrediction"] = { -- your set put here .... 
+        ["JumpOffSetPing"] = true,
+        ["PredictionOnPlrAutoCustom"] = true
+        },
+        ["OffSetPrediction"] = {
+            P30 = 0.01,
+            P40 = 0.01,
+            P50 = 0.02,
+            P60 = 0.02,
+            P70 = 0.02,
             P80 = 0.03,
             P90 = 0.03,
-            P100 = 0.04,
-            P110 = 0.05,
-            P120 = 0.06,
-            P130 = 0.06,
-            P140 = 0.07,
-            P150 = 0.09,
-            P160 = 0.09,
-            P170 = 0.1,
-            P180 = 0.11,
-            P190 = 0.13,
-            P200 =  0.14,
+            P100 = 0.03,
+            P110 = 0.04,
+            P120 = 0.04,
+            P130 = 0.04,
+            P140 = 0.05,
+            P150 = 0.05,
+            P160 = 0.05,
+            P170 = 0.06,
+            P180 = 0.06,
+            P190 = 0.06,
+            P200 =  0.07,
+    },
+        ["CustomAutoPrediction"] = {
+            P20 = 0.1132057,
+            P30 = 0.12983555,
+            P40 = 0.13037,
+            P50 = 0.121833823,
+            P60 = 0.1426572,
+            P70 = 0.17053984222,
+            P80 = 0.1179958751111, 
+            P90 = 0.1468785467327825768238914423,
+            P100 = 0.150229,
+            P110 = 0.153456765456765458888,
+            P120 = 0.1537794051309922478907856875967573, 
+            P130 = 0.15453,
+            P140 = 0.1565665,
+            P150 = 0.15873582,
+            P160 = 0.1663,
+            P170 = 0.1672,
+            P180 = 0.1848,
+            P190 = 0.1857,
+            P200 =  0.1865,
+           
         },
         ["MiscFeature"] = {
             ["CframeMovedirspeed"] = true,
