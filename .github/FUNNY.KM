@@ -1,7 +1,6 @@
-
 getgenv().FUNNY_KM = {
     ["main"] = { -- Do not try to delete or change some of the tables below
-        ["Version"] = "0.1.240", -- fix and add new methood remove ass methood
+        ["Version"] = "0.1.25.5", 
         ["Credit"] = "MadeBy mmbok,kdyriz in discord",
         ["Newupdate"] = "Add many to Prediction and many to targetstrafe",
         ["Some"] = "script is skid . lua better some dotlock some lock ... and free rn",
@@ -21,6 +20,7 @@ getgenv().FUNNY_KM = {
         },
         ["DOTSETTINGS"] = {
             ["Prediction"] = 0.14,
+            ["Prediction_Methood"] = "Nothing", --
             ["Offset"] = true,
             ["OffSetAmount"] = 0.04,
             ["JumpOffSetAmount"] = 0.04,
