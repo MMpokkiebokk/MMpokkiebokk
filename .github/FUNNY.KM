@@ -1,6 +1,7 @@
+
 getgenv().FUNNY_KM = {
     ["main"] = { -- Do not try to delete or change some of the tables below
-        ["Version"] = "0.1.21.5",
+        ["Version"] = "0.1.240", -- fix and add new methood remove ass methood
         ["Credit"] = "MadeBy mmbok,kdyriz in discord",
         ["Newupdate"] = "Add many to Prediction and many to targetstrafe",
         ["Some"] = "script is skid . lua better some dotlock some lock ... and free rn",
@@ -39,7 +40,7 @@ getgenv().FUNNY_KM = {
     },
     -- wait for better update
     ["Normal"] = { -- soon
-        ["SpeedChoose"] = "BestForHighPing", --BestForHighPing , Ultimatespeed , Normal  (it doesn't affect your speed settings, just makes you better)
+    ["SpeedChoose"] = "BestForHighPing", --BLATANTSETTINGS,BestForHighPing , Normal  (it doesn't affect your speed settings, just makes you better)
         ["Speed_REAL"] = 1,
         ["Speed_X"] = 1,
         ["Speed_Z"] = 1,
@@ -47,6 +48,11 @@ getgenv().FUNNY_KM = {
         ["Distance_Z"] = 10,
         ["Height"] = 5,
         ["Untargetmethood"] = "BACKOLDPOS",
+    },
+    ["BLATANTSETTINGS"] =  {
+        ["BLATANT_Speed"] =  999999,
+        ["BLATANT_Distance"] =  20,
+        ["BLATANT_Height"] = 0
     },
     -------------------
     ["Csync"] = {
