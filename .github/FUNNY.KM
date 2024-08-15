@@ -20,7 +20,7 @@ getgenv().FUNNY_KM = {
         },
         ["DOTSETTINGS"] = {
             ["Prediction"] = 0.14,
-            ["Prediction_Methood"] = "Nothing", --
+            ["Prediction_Methood"] = "Nothing", --"Nothing","Desync","Reversed","Underworld","Slingshot","Swing"
             ["Offset"] = true,
             ["OffSetAmount"] = 0.04,
             ["JumpOffSetAmount"] = 0.04,
