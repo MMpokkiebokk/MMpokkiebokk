@@ -57,7 +57,7 @@ getgenv().FUNNY_KM = {
         ["Enabled"] = true,
         ["ResolverMethood"] = "Pivot",
     },
-    ["ResolverSettings"] = { -- didnt for rn
+    ["ResolverSettings"] = {
         Pivot = {
             FristTime = 0,
             LastTime = 0,
@@ -283,7 +283,6 @@ getgenv().FUNNY_KM = {
     ["MiscFeature"] = {
         ["CframeMovedirspeed"] = true,
         ["AmountCFMDspeed"] = 2,
-        ["AntiStomp"] = true, -- didnt work (me is working on it and fixing wait for new version)
+        ["AntiStomp"] = true,
     },
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MMpokkiebokk/ki/main/Protected_3132381260303393.txt",true))()
