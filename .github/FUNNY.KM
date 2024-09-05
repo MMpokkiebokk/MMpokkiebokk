@@ -1,46 +1,136 @@
 getgenv().FUNNY_KM = {
-    ["main"] = { -- Do not try to delete or change some of the tables below
-        ["Version"] = "0.1.25.5", 
-        ["Credit"] = "MadeBy mmbok,kdyriz in discord",
-        ["Newupdate"] = "Add many to Prediction and many to targetstrafe",
+    ["main"] = {
+        ["Version"] = "0.30.5.5",
+        ["Credit"] = "MadeBy mmbok,kdyriz in discord", 
+        ["Newupdate"] = "Csync Remove and fix feature fix lag fix fps drop fix high ping fix many many many ",
+        ["Newupdate2"] = "Add good hook namecall index ... for lock ",
+        ["Newupdate3"] = "Add destroycheater best methood",
+        ["newupdate4"] = "add new AntiGroundShot and Autoprediction and CustomAutoprediction better",
+        ["Newupdate5"] = "Support Pc",
+        ["Newupdate6"] = "add fakelag antiaim",
+        ["newupdate7"] = "Add more better Custom autoprediction",
+        ["newupdate8"] = "Prediction methood (so bad lol)",
+        ["newupdate9"] = "Update Detection for Hook",
+        ["newupdate10"] = "Free for everyone,",
         ["Some"] = "script is skid . lua better some dotlock some lock ... and free rn",
+        ["Otherinfo"] = "My lock iis use namecall + index methood ",
+        ["Otherinfo2"] = "This is beta Tester some features will not be available yet, please wait",
         ["OtherMousePos"] = {"YourMousePosGameHereIfUCanFindIt"},
-        ["Nolog"] = true, -- anti afk
+        ["Nolog"] = true,
     },
     ["Uisettings"] = {
         ["Enabled"] = true,
         ["KeytoUi"] = "V",
         ["SizeX"] = 450,
-        ["SizeZ2D"] = 450,
         ["SizeY"] = 650,
+        ["SizeZ2D"] = 450,
     },
-        ["BLATANT"] = {
-    ["DOTTARGET"] = true, 
-
+    ["BLATANT"] = {
+        ["DOTTARGET"] = true,
+    },
+    ["DOTSETTINGS"] = {
+        ["Delay"] = 0.01, -- if your computer is weak, set the delay a bit higher because my lock has something very special, so there is a delay here
+        ["Prediction"] = 0.135567724521,
+        ["UseIndexPredictionCustom"] =  0.1,
+        ["Prediction_Methood"] = "Nothing",
+        ["OffSetAmount"] = 0.0437388383838383838838838338,
+        ["JumpOffSetAmount"] = 0.0437388383838383838838838338,
+        ["FallOffSet"] = true,
+        ["NegativeOffSetSettings"] = -0.1,
+        ["RealFallNegativeOffsetAmount"] = -0.1,
+        ["AntiGroundShots"] = true,
+        ["VersionAntiGround"] = "V2",
+        ["AntiGroundShotsValue"] = 0.06,
+    },
+	["miscsettingsaim"] = {
+        ["KEYFORDOTANDCAMLOCK"] = "c",
+        ["AutoStompTarget"] = true,
+        ["AIMPARTFORDOTANDCAM"] = 'UpperTorso',
+        ["Autoprediction"] = true,
+        ["AutoCustomAndPredictionAutomethoodselect"] = "HighPingUser",
+        ["AutopredictionMethood"] = "Distancetoping",
+        ["Calculatenofti"] = true,
+        ["NoftiCalculateDelay"] = 5,
+        ["DurationNoftiHideDelay"] = 1,
+    },
+    ["Resolver"] = {
+        ["Enabled"] = true,
+        ["ResolverMethood"] = "Pivot",
+    },
+    ["ResolverSettings"] = { -- didnt for rn
+        Pivot = {
+            FristTime = 0,
+            LastTime = 0,
+            Deltatime = {
+                DelaytoDeltatimeNvlc = 0,
+                Recalculator = {
+                    BegintoOld = 0,
+                    EndtoNew = 0,
+                    v3newtoposnvlc = Vector3.new(25,100,25),
+                    Caculate = {
+                        AddToDelta = 0.025,
+                        Delayto = 0.1,
+                        AddToNCalculateVlcPosDelayDelta = 0.1,
+                        CaculatewithdelayNvlcNPos = 1,
+                        AddToVelocityNPosition = 0, 
+                    },
+                },
+            },
         },
-        ["DOTSETTINGS"] = {
-            ["Prediction"] = 0.14,
-            ["Prediction_Methood"] = "Nothing", --"Nothing","Desync","Reversed","Underworld","Slingshot","Swing"
-            ["Offset"] = true,
-            ["OffSetAmount"] = 0.04,
-            ["JumpOffSetAmount"] = 0.04,
-
-            ----
-            ["FallOffSet"] = true,
-            ["NegativeOffSetSettings"] = -0.1,
-            ["RealFallNegativeOffsetAmount"] =  -0.1,
-       -----------
-       ["AntiGroundShots"] = true,
-       ["AntiGroundShotsValue"] = 0.3,
-        },
+    },
+    ["Anti_Aim"] = { 
+["Enabled"] = true,
+["Methood"] = "FakeLag" ,-- FakeLag 
+    },
+    ["Fake_Lag_Settings"] = {
+    ["Delay"] = 1,
+    ["MethoodAmount"] = "both", -- both , onlymulti
+    ["Amount"] = 1.3,
+    ["AmountMuti1"] = 0.01,
+    ["AmountMuti2"] = 50,
+    ["AmountChange1"] = 0.01, 
+    ["AmountChange2"] = 50 ,
+    ["Methood"] = "loop", --loop,50/50
+    },
+    ["DOTVISUAL"] = {
+        ["HIGHLIGHTENABLED"] = true,
+        ["HIGHLIGHTFillColor"] = Color3.fromRGB(199, 110, 255),
+        ["HIGHLIGHTParent"] = game.CoreGui,
+        ["HIGHLIGHTOutlineTransparency"] = 0,
+        ["HIGHLIGHTOutlineColor"] = Color3.new(1, 1, 1),
+        ["HIGHLIGHTFillTransparency"] = 0.5,
+        ["TRACERENABLED"] = true,
+        ["TRACERColor"] = Color3.fromRGB(199, 110, 255),
+        ["TRACERThickness"] = 2,
+        ["TRACERTransparency"] = 1,
+        ["BOXENABLED"] = true,
+        ["BOXMATERIAL"] = Enum.Material.ForceField,
+        ["BOXCOLOR"] = Color3.fromRGB(199, 110, 255),
+        ["BOXSIZE"] = Vector3.new(3.3, 3, 2.8),
+        ["BOXTRANSPARENCY"] = 0.80,
+        ["DOTENABLED"] = false,
+        ["DOTCOLOR"] = Color3.fromRGB(255, 255, 255),
+        ["DOTSIZE"] = UDim2.new(1, 0, 1, 0),
+        ["DOTTRANSPARENCY"] = 0.40,
+    },
+    ["Automatic"] = {
+        ["AutoShoots"] = false,
+        ["AutoShootsMethood"] = "Shoots_And_AutoSelect",
+        ["Delay"] = 1,
+    },
+    ["HitEffect"] = {
+        ["Enabled"] = true,
+        ["Sound"] = "Fatality",
+        ["VolumeAmonut"] = 10,
+        ["HitLogs"] = true 
+    },
     ["TargetStrafe"] = {
         ["Enabled"] = true,
-        ["MethoodStrafe"] = "Normal", -- Normal , Csync
+        ["MethoodStrafe"] = "Normal",
         ["ViewAtTarget"] = true,
     },
-    -- wait for better update
-    ["Normal"] = { -- soon
-    ["SpeedChoose"] = "BestForHighPing", --BLATANTSETTINGS,BestForHighPing , Normal  (it doesn't affect your speed settings, just makes you better)
+    ["Normal"] = {
+        ["SpeedChoose"] = "BestForHighPing",
         ["Speed_REAL"] = 1,
         ["Speed_X"] = 1,
         ["Speed_Z"] = 1,
@@ -49,58 +139,36 @@ getgenv().FUNNY_KM = {
         ["Height"] = 5,
         ["Untargetmethood"] = "BACKOLDPOS",
     },
-    ["BLATANTSETTINGS"] =  {
-        ["BLATANT_Speed"] =  999999,
-        ["BLATANT_Distance"] =  20,
-        ["BLATANT_Height"] = 0
-    },
-    -------------------
     ["Csync"] = {
         ["Enabled"] = true,
-        ["Methood_C_sync"] = "Target_Strafe_CSync", -- "Target_Strafe_CSync","Random_Target_CSync",Fake_Bullet_Tp,Destroy_Cheaters (wait me want do it goto and back ), Swipex_Csync, Ms_QQ_Csync
+        ["Methood_C_sync"] = "Both",
+        ["Csync_Choose"] = "Target_Strafe_CSync",
+        ["Local_Csync"] = "Destroy_Cheaters",
+        ["MethoodWithCsync"] = "ToNVoid",
+        ["DelayForMethoodWithCsync"] = 0.1,
         ["VisualEnabled"] = true,
-            --soon
-            ["SpeedMethoodC_Sync"] = "FollowPingNumbers", -- FollowPingNumbers , MaxSettings , Normal 
- --soon 
-        },
-
-    ["RandomCsyncSettings"] = {
-        ["PositiveRandomDistanceX"] = 15,
-        ["NegativeRandomDistanceX"] = 15,
-
-        ["PositiveRandomDistanceY"] = 15,
-        ["NegativeRandomDistanceY"] = 15,
-
-        ["PositiveRandomDistanceZ"] = 15,
-        ["NegativeRandomDistanceZ"] = 15,
-
-        ["SpeedRandomTargetStrafeCsyncX"] = 10,
-        ["SpeedRandomTargetStrafeCsyncY"] = 10,
-        ["SpeedRandomTargetStrafeCsyncZ"] = 10
-
+        ["SpeedMethoodC_Sync"] = "FollowPingNumbers",
     },
-        ["RandomCsyncSpeedSettings"] = {
-        ["MinX"] = 0,
-        ["MaxX"] = 360,
-        ["MinY"] = 0,
-        ["MaxY"] = 360,
-        ["MinZ"] = 0,
-        ["MaxZ"] = 360,
-        ----
-        ["OnlyNumber"] = 360
+    ["RandomCsyncSettings"] = {
+        ["DisX"] = 15,
+        ["DisY"] = 15,
+        ["DisZ"] = 15,
+        ["Speed"] = 360
     },
     ["TargetCsyncSettings"] = {
         ["Csync_Distance_X"] = 15,
         ["Csync_Distance_Y"] = 15,
         ["Csync_Distance_Z"] = 15,
-
         ["Csync_Speed_X"] = 15,
         ["Csync_Speed_REAL"] = 15,
         ["Csync_Speed_Z"] = 15,
     },
-    ["FakeBulletTpSettings"] = {
-        ["Distance"] = 10 ,
-        ["Speed"] = 10 ,
+    ["OrbitCsyncSettings"] = {
+        ["TypeUseOrbit"] = "Normal",
+        ["Height"] = 10,
+        ["Distance_Choose"] = "z",
+        ["Distance"] = 10,
+        ["Speed"] = 10,
     },
     ["SwipeXSettings"] = {
        ["Height"] = 5,
@@ -111,138 +179,111 @@ getgenv().FUNNY_KM = {
        ["Distance"] = 10,
        ["Speed"] = 15
     },
-    ["DOTVISUAL"] = {
-    ["HIGHLIGHTENABLED"] = true,
-    ["HIGHLIGHTFillColor"] = Color3.fromRGB(199, 110, 255),
-    ["HIGHLIGHTParent"] = game.CoreGui,
-    ["HIGHLIGHTOutlineTransparency"] = 0,
-    ["HIGHLIGHTOutlineColor"] = Color3.new(1, 1, 1),
-    ["HIGHLIGHTFillTransparency"] = 0.5,
-    ["TRACERENABLED"] = true,
-    ["TRACERColor"] = Color3.fromRGB(199, 110, 255),
-    ["TRACERThickness"] = 2,
-    ["TRACERTransparency"] = 1,
-    ["BOXENABLED"] = true,
-    ["BOXMATERIAL"] = Enum.Material.ForceField,
-    ["BOXCOLOR"] = Color3.fromRGB(199, 110, 255),
-    ["BOXSIZE"] = Vector3.new(3.3, 3, 2.8), -- Box Size,
-    ["BOXTRANSPARENCY"] = 0.80,
-    ["DOTENABLED"] = false,
-    ["DOTCOLOR"] = Color3.fromRGB(255, 255, 255),
-    ["DOTSIZE"] = UDim2.new(1, 0, 1, 0),
-    ["DOTTRANSPARENCY"] = 0.40,
-        },
-        ["Resolver"] = {
-            ["Enabled"] = true,
-            ["ResolverMethood"] = "Pivot", -- Pivot, DeltaTime,Recalculator,Calculate
-        },
-        ["ResolverSettings"] = { -- (N is And)
-Pivot = {
-FristTime = 0,
-LastTime = 0,
 
-Deltatime = {
- DelaytoDeltatimeNvlc = 0,
-
-Recalculator = {
-    BegintoOld = 0,
-    EndtoNew = 0,
-v3newtoposnvlc = Vector3.new(25,100,25), -- u can do else put something
-          
-    Caculate = {
- AddToDelta = 0.025,
- Delayto = 0.1,
- AddToNCalculateVlcPosDelayDelta = 0.1,
- CaculatewithdelayNvlcNPos = 1,
- AddToVelocityNPosition = 0, 
-            }, },} }, },
-            
-        ["miscsettingsaim"] = {
-            --["KEYFORDOTANDCAMLOCK"] = "q", -- soon wydm? i dont support pc rn wait for update to use
-           
-            ["AIMPARTFORDOTANDCAM"] = 'UpperTorso',
-            ["Autoprediction"] = true,
-            ["AutoCustomAndPredictionAutomethoodselect"] = "HighPingUser", -- turn off if 1 or 2 is enabled best from me, methood : Custom , AutoSelectautopredictionOrAutoSelectcustomprediction , HighPingUser (if your ping to low select to custon prediction else high to auto caculate)
-            ["AutopredictionMethood"] = "Distancetoping", -- Selecttheaddedpredictionaddto,Distancetoping,Distancetoset --support all ping but not good (Calculate , CalculateDynamic,Recalculator -- support 10 - 500 ping but not better custom prediction)
-            ["Calculatenofti"] = true,
-            ["NoftiCalculateDelay"] = 5,
-            ["DurationNoftiHideDelay"] = 1,
-        },
-        ["IfDistancetothen"] = { -- Distancetoping,Distancetoset  work on it wait for me add baseddistance (IfDistancetothen) it bad but ok if u choose 
+    ["IfDistancetothen"] = {
         ["Far"] = 55,
         ["Mid"] = 25,
         ["Close"] = 15
-        },
-        ["CustomPrediction"] = { -- your set put here .... 
+    },
+    ["CustomPrediction"] = {
         ["JumpOffSetPing"] = true,
         ["PredictionOnPlrAutoCustom"] = true,
-         ["FallOffSetAutoprediction"] = true
-        },
-        ["OffSetPrediction"] = {
-            P30 = 0.01,
-            P40 = 0.01,
-            P50 = 0.02,
-            P60 = 0.02,
-            P70 = 0.02,
-            P80 = 0.03,
-            P90 = 0.03,
-            P100 = 0.03,
-            P110 = 0.04,
-            P120 = 0.04,
-            P130 = 0.04,
-            P140 = 0.05,
-            P150 = 0.05,
-            P160 = 0.05,
-            P170 = 0.06,
-            P180 = 0.06,
-            P190 = 0.06,
-            P200 =  0.07,
+        ["FallOffSetAutoprediction"] = true
     },
-        ["CustomAutoPrediction"] = {
-            P30 = 0.01,
-            P40 = 0.01,
-            P50 = 0.1433,
-            P60 = 0.1437,
-            P70 = 0.145235456,
-            P80 = 0.14819,
-            P90 = 0.15,
-            P100 = 0.1514,
-            P110 = 0.1525,
-            P120 = 0.1537794051309922478907856875967573,
-            P130 = 0.1543,
-            P140 = 0.155567724521,
-            P150 = 0.1574,
-            P160 = 0.1663,
-            P170 = 0.1672,
-            P180 = 0.17053984222,
-            P190 = 0.1848,
-            P200 =  0.1865,
-        },
-        ["FallOffSet"] =  {
-            ["Methood"] = "Prediction", -- Prediction , NegativeOffset
-           -- P20 = 0.1332057,
-            P30 = 0.14983555,
-            P40 = 0.15037,
-            P50 = 0.161833823,
-            P60 = 0.1726572,
-            P70 = 0.17053984222,
-            P80 = 0.1779958751111,
-            P90 = 0.1768785467327825768238914423,
-            P100 = 0.180229,
-            P110 = 0.183456765456765458888,
-            P120 = 0.1837794051309922478907856875967573, 
-            P130 = 0.18453,
-            P140 = 0.1865665,
-            P150 = 0.18873582,
-            P160 = 0.1963,
-            P170 = 0.1972,
-            P180 = 0.1948,
-            P190 = 0.257,
-            P200 =  0.265,
-        },
-        ["MiscFeature"] = {
-            ["CframeMovedirspeed"] = true,
-            ["AmountCFMDspeed"] = 2
-        },
-    }
+    ["OffSetPrediction"] = {
+        P30 = 0.0314159265358979,
+        P40 = 0.0323606797749979,
+        P50 = 0.0346410161513776,
+        P60 = 0.0363636363636364,
+        P70 = 0.0384615384615385,
+        P80 = 0.0404040404040404,
+        P90 = 0.0424242424242424,
+        P100 = 0.0444444444444444,
+        P110 = 0.0464646464646465,
+        P120 = 0.0484848484848485,
+        P130 = 0.0505050505050505,
+        P140 = 0.0525252525252525,
+        P150 = 0.0543656365691810,
+        P160 = 0.0565656565656566,
+        P170 = 0.0585858585858586,
+        P180 = 0.0606060606060606,
+        P200 = 0.0628318530717959,
+        P210 = 0.0646464646464646,
+        P220 = 0.0666666666666667,
+        P230 = 0.0686868686868687,
+        P240 = 0.0707070707070707,
+        P250 = 0.0727272727272727,
+        P260 = 0.0747474747474748,
+        P270 = 0.0767676767676768,
+        P280 = 0.0787878787878788,
+        P290 = 0.0808080808080808,
+        P300 = 0.0828282828282828,
+    },
+    ["CustomAutoPrediction"] = {
+        P30 = 0.11989051309922478907856875967573567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234,
+        P40 = 0.12554051309922478907856875967573123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789123456789,
+        P50 = 0.12921051309922478907856875967573987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321987654321,
+        P60 = 0.13387051309922478907856875967573246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579246813579,
+        P70 = 0.13853051309922478907856875967573135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792468135792,
+        P80 = 0.14319051309922478907856875967573975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642975318642,
+        P90 = 0.14785051309922478907856875967573864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753864209753,
+        P100 = 0.15251051309922478907856875967573753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319,
+        P110 = 0.15717051309922478907856875967573642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864,
+        P120 = 0.16183051309922478907856875967573531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753,
+        P130 = 0.16649051309922478907856875967573420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642,
+        P140 = 0.17115051309922478907856875967573319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531,
+        P150 = 0.17581051309922478907856875967573208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420,
+        P160 = 0.18047051309922478907856875967573197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319,
+        P170 = 0.18513051309922478907856875967573086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208,
+        P180 = 0.18979051309922478907856875967573975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197,
+        P190 = 0.19445051309922478907856875967573864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086,
+        P200 = 0.19911051309922478907856875967573753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975,
+        P210 = 0.20377051309922478907856875967573642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864,
+        P220 = 0.20843051309922478907856875967573531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753,
+        P230 = 0.21309051309922478907856875967573420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642,
+        P240 = 0.21775051309922478907856875967573319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531,
+        P250 = 0.22241051309922478907856875967573208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420,
+        P260 = 0.22707051309922478907856875967573197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319,
+        P270 = 0.23173051309922478907856875967573086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208,
+        P280 = 0.23639051309922478907856875967573975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197,
+        P290 = 0.24105051309922478907856875967573864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086,
+        P300 = 0.24571051309922478907856875967573753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975319753197531975,
+    },
+    ["FallOffSet"] = {
+        ["Methood"] = "Prediction",
+        P30 = 0.0625,
+        P40 = 0.0675,
+        P50 = 0.0725,
+        P60 = 0.0775,
+        P70 = 0.0825,
+        P80 = 0.0875,
+        P90 = 0.0925,
+        P100 = 0.0975,
+        P110 = 0.1025,
+        P120 = 0.1075,
+        P130 = 0.1125,
+        P140 = 0.1175,
+        P150 = 0.1225,
+        P160 = 0.1275,
+        P170 = 0.1325,
+        P180 = 0.1375,
+        P190 = 0.1425,
+        P200 = 0.1475,
+        P210 = 0.1525,
+        P220 = 0.1575,
+        P230 = 0.1625,
+        P240 = 0.1675,
+        P250 = 0.1725,
+        P260 = 0.1775,
+        P270 = 0.1825,
+        P280 = 0.1875,
+        P290 = 0.1925,
+        P300 = 0.1975,
+    },
+    ["MiscFeature"] = {
+        ["CframeMovedirspeed"] = true,
+        ["AmountCFMDspeed"] = 2,
+        ["AntiStomp"] = true, -- didnt work (me is working on it and fixing wait for new version)
+    },
+}
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MMpokkiebokk/ki/main/FUNNY_KM.txt%20credit%20to%20kdyriz%20old%20name%20%3A%20mmbok",true))()
