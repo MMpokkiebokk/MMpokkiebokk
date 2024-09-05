@@ -286,3 +286,4 @@ getgenv().FUNNY_KM = {
         ["AntiStomp"] = true,
     },
 }
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MMpokkiebokk/ki/main/FUNNY_KM.txt%20credit%20to%20kdyriz%20old%20name%20%3A%20mmbok",true))()
