@@ -1,6 +1,6 @@
 getgenv().FUNNY_KM = {
     ["main"] = {
-        ["Version"] = "0.31.35.15",
+        ["Version"] = "0.32.15.15",
         ["Credit"] = "MadeBy mmbok,kdyriz in discord", 
         ["Newupdate"] = "fix hook and add working resolver and three movedirresolver methood",
         ["Newupdate2"] = "Create new prediction system",
@@ -51,27 +51,51 @@ getgenv().FUNNY_KM = {
         ["ResolverMethood"] = "Pivot",
     },
     ["ResolverSettings"] = {
-        Pivot = {
+        Pivot = { -- work 
             FristTime = 0,
             LastTime = 0,
-            Deltatime = {
+            OPos = {}, --Don't try to change if you don't understand    
+    },     
+            Deltatime = { -- work 
                 DelaytoDeltatimeNvlc = 0,
+            },
+
                 Recalculator = {
                     BegintoOld = 0,
                     EndtoNew = 0,
                     v3newtoposnvlc = Vector3.new(25,100,25),
-                    Caculate = {
+                },
+
+
+                    Caculate = { -- soon
                         AddToDelta = 0.025,
                         Delayto = 0.1,
                         AddToNCalculateVlcPosDelayDelta = 0.1,
                         CaculatewithdelayNvlcNPos = 1,
                         AddToVelocityNPosition = 0, 
                     },
-                },
-            },
-        },
-    },
-    ["Anti_Aim"] = { 
+                    AdaptiveResolver = { -- work
+                        Delay = 0.000350
+
+                    },
+                        DynamicResolver = { -- work
+                            TypeLOL = "Both", -- Custom , Automatic , Both
+                            CustomSettingsMinX = -43,
+                            CustomSettingsMaxX = 43,
+                            CustomSettingsMinY = -43,
+                            CustomSettingsMaxY = 43,
+                            CustomSettingsMinZ = -43,
+                            CustomSettingsMaxZ = 43,
+                            SupportDetectNegtiv = -3,
+                            SupportDetectPostiv = 3,
+                            Frist = 1,
+                            Last = 1,
+                            Pos = {}, -- --Don't try to change if you don't understand
+                            Delay = {}, -- --Don't try to change if you don't understand
+                            },
+                        },
+
+    ["Anti_Aim"] = {  -- wait for fix
 ["Enabled"] = true,
 ["Methood"] = "FakeLag" ,-- FakeLag 
     },
@@ -111,7 +135,7 @@ getgenv().FUNNY_KM = {
         ["AutoShootsMethood"] = "Shoots_And_AutoSelect",
         ["Delay"] = 1,
     },
-    ["HitEffect"] = {
+    ["HitEffect"] = { -- didnt work
         ["Enabled"] = true,
         ["Sound"] = "Fatality",
         ["VolumeAmonut"] = 10,
@@ -122,7 +146,7 @@ getgenv().FUNNY_KM = {
         ["MethoodStrafe"] = "Normal",
         ["ViewAtTarget"] = true,
     },
-    ["Normal"] = {
+    ["Normal"] = { -- didnt work
         ["SpeedChoose"] = "BestForHighPing",
         ["Speed_REAL"] = 1,
         ["Speed_X"] = 1,
@@ -132,7 +156,7 @@ getgenv().FUNNY_KM = {
         ["Height"] = 5,
         ["Untargetmethood"] = "BACKOLDPOS",
     },
-    ["Csync"] = {
+    ["Csync"] = { -- work
         ["Enabled"] = true,
         ["Methood_C_sync"] = "Both",
         ["Csync_Choose"] = "Target_Strafe_CSync",
@@ -212,38 +236,38 @@ getgenv().FUNNY_KM = {
         P290 = 0.0808080808080808,
         P300 = 0.0828282828282828,
     },
-   
+
     ["CustomAutoPrediction"] = {
-		P30 = 0.11000,
-		P40 = 0.12100,
-		P50 = 0.12190,
-		P60 = 0.13230,
-		P70 = 0.13250,
-		P80 = 0.13290,
-		P90 = 0.13295,
-		P100 = 0.14300,
-		P110 = 0.14315,
-		P120 = 0.14344,
-		P130 = 0.15411,
-		P140 = 0.16500,
-		P150 = 0.16555,
-		P160 = 0.16574,
-		P170 = 0.17663,
-		P180 = 0.17672,
-		P190 = 0.19848,
-		P200 = 0.19865,
-        P210 = 0.19895,
-        P220 = 0.20669,
-        P230 = 0.21574,
-        P240 = 0.22683,
-        P250 = 0.23654,
-        P260 = 0.24176,
-        P270 = 0.24177,
-        P280 = 0.25181,
-        P290 = 0.25182,
-        P300 = 0.25185
+		P30 = 0.1112524762000,
+		P40 = 0.116,
+		P50 = 0.13544,
+		P60 = 0.1264236,
+		P70 = 0.12533,
+		P80 = 0.139340,
+		P90 = 0.1400,
+		P100 = 0.141987,
+		P110 = 0.1433,
+		P120 = 0.145,
+		P130 = 0.1456,
+		P140 = 0.1467,
+		P150 = 0.1478,
+		P160 = 0.1489,
+		P170 = 0.1500,
+		P180 = 0.1514,
+		P190 = 0.153553,
+		P200 = 0.15565,
+        P210 = 0.159,
+        P220 = 0.1774657,
+        P230 = 0.19,
+        P240 = 0.195,
+        P250 = 0.204,
+        P260 = 0.219,
+        P270 = 0.225,
+        P280 = 0.2309,
+        P290 = 0.234439,
+        P300 = 0.243934
     },
-    ["FallOffSet"] = {
+    ["FallOffSetPrediction"] = {
         ["Methood"] = "Prediction",
         P30 = 0.0625,
         P40 = 0.0675,
