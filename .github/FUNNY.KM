@@ -1,12 +1,10 @@
 getgenv().FUNNY_KM = {
     ["main"] = {
-        ["Version"] = "0.32.15.15",
+        ["Version"] = "0.34.05.0",
         ["Credit"] = "MadeBy mmbok,kdyriz in discord", 
-        ["Newupdate"] = "fix hook and add active resolver and Temporarily remove inactive method resolvers and still remove three movedir methood ",
-        ["Newupdate2"] = "Create new prediction system",
-        ["newupdate3"] = "fix bad methood or remove",
+        ["Newupdate"] = "still remove index methood and fix add more feature ",
         ["Some"] = "script is skid . lua better some dotlock some lock ... and free rn",
-        ["Otherinfo"] = "My lock is use namecall + index methood ",
+        ["Otherinfo"] = "My lock iis use namecall + index methood ",
         ["Otherinfo2"] = "This is beta Tester some features will not be available yet, please wait",
         ["OtherMousePos"] = {"YourMousePosGameHereIfUCanFindIt"},
         ["Nolog"] = true,
@@ -14,6 +12,7 @@ getgenv().FUNNY_KM = {
     ["Uisettings"] = {
         ["Enabled"] = true,
         ["KeytoUi"] = "V",
+        ["Custom_Size"] = "AutoUseYourDpiForSupport", -- Custom,Automatic,AutoUseYourDpiForSupport
         ["SizeX"] = 450,
         ["SizeY"] = 650,
         ["SizeZ2D"] = 450,
@@ -37,9 +36,9 @@ getgenv().FUNNY_KM = {
     },
 	["miscsettingsaim"] = {
         ["KEYFORDOTANDCAMLOCK"] = "c",
-        ["AutoStompTarget"] = true,
+        ["AutoStompTarget"] = true, -- didnt work
         ["AIMPARTFORDOTANDCAM"] = 'UpperTorso',
-        ["Autoprediction"] = true,
+        ["Autoprediction"] = false,
         ["AutoCustomAndPredictionAutomethoodselect"] = "HighPingUser",
         ["AutopredictionMethood"] = "Distancetoping",
         ["Calculatenofti"] = true,
@@ -48,9 +47,14 @@ getgenv().FUNNY_KM = {
     },
     ["Resolver"] = {
         ["Enabled"] = true,
+        ["Anti_Curve"] = true,
         ["ResolverMethood"] = "Pivot",
     },
+                
     ["ResolverSettings"] = {
+ CurveSettings = {
+    Amount = 0.3,
+ },
         Pivot = { -- work 
             FristTime = 0,
             LastTime = 0,
@@ -59,8 +63,12 @@ getgenv().FUNNY_KM = {
             Deltatime = { -- work 
                 DelaytoDeltatimeNvlc = 0,
             },
+            DeltatimeV2 = { -- work 
+                AutoDetectAmount = 70,
+                
+            },
 
-                Recalculator = {
+                Recalculator = { -- soon 
                     BegintoOld = 0,
                     EndtoNew = 0,
                     v3newtoposnvlc = Vector3.new(25,100,25),
@@ -74,9 +82,16 @@ getgenv().FUNNY_KM = {
                         CaculatewithdelayNvlcNPos = 1,
                         AddToVelocityNPosition = 0, 
                     },
-                    AdaptiveResolver = { -- work
-                        Delay = 0.000350
+                    Normal = { -- work
+                        Delay = 0.00355
 
+                    },
+                    AdaptiveResolver = { 
+                        Delay = 0.00355,
+                        AssemblyAngularVelocity = "getcal", --recal,calculate,getcal
+                        AssemblyLinearVelocity = "recal",--recal,calculate,getcal
+                        Velocity = "calculate",--recal,calculate,getcal
+                        NextVector = Vector3.new(0,0,0)
                     },
                         DynamicResolver = { -- work
                             TypeLOL = "Both", -- Custom , Automatic , Both
@@ -130,7 +145,7 @@ getgenv().FUNNY_KM = {
         ["DOTSIZE"] = UDim2.new(1, 0, 1, 0),
         ["DOTTRANSPARENCY"] = 0.40,
     },
-    ["Automatic"] = {
+    ["Automatic"] = { -- soon
         ["AutoShoots"] = false,
         ["AutoShootsMethood"] = "Shoots_And_AutoSelect",
         ["Delay"] = 1,
@@ -187,14 +202,22 @@ getgenv().FUNNY_KM = {
         ["Distance"] = 10,
         ["Speed"] = 10,
     },
-    ["SwipeXSettings"] = {
+    ["SwipeSettings"] = {
+       ["MethoodSwipe"] = "x", -- x , y , z  
        ["Height"] = 5,
-       ["SwipeXAmnout"] = 15,
-       ["Speed"] = 5,
+       ["SwipeAmnout"] = 15,
+       ["SpeedX"] = 5,
+       ["SpeedY"] = 5, 
+       ["SpeedZ"] = 5 
     },
+
     ["MSQQ_Settings"] = {
        ["Distance"] = 10,
-       ["Speed"] = 15
+       ["Height"] = -5,
+       ["SpeedX"] = 15,
+       ["SpeedY"] = 15,
+       ["SpeedZ"] = 15,
+
     },
 
     ["IfDistancetothen"] = {
@@ -236,36 +259,36 @@ getgenv().FUNNY_KM = {
         P290 = 0.0808080808080808,
         P300 = 0.0828282828282828,
     },
-
+ 
     ["CustomAutoPrediction"] = {
-		P30 = 0.1112524762000,
-		P40 = 0.116,
-		P50 = 0.13544,
-		P60 = 0.1264236,
-		P70 = 0.12533,
-		P80 = 0.139340,
-		P90 = 0.1400,
-		P100 = 0.141987,
-		P110 = 0.1433,
-		P120 = 0.145,
-		P130 = 0.1456,
-		P140 = 0.1467,
-		P150 = 0.1478,
-		P160 = 0.1489,
-		P170 = 0.1500,
-		P180 = 0.1514,
-		P190 = 0.153553,
-		P200 = 0.15565,
-        P210 = 0.159,
-        P220 = 0.1774657,
-        P230 = 0.19,
-        P240 = 0.195,
-        P250 = 0.204,
-        P260 = 0.219,
-        P270 = 0.225,
-        P280 = 0.2309,
-        P290 = 0.234439,
-        P300 = 0.243934
+        P30 = 0.11252476,
+        P40 = 0.10023,
+        P50 = 0.13544,
+        P60 = 0.1264236 or 0.1433,
+        P70 = 0.12533,
+        P80 = 0.139340,
+        P90 = 0.142007,
+        P100 = 0.141987,
+        P110 = 0.1367,
+        P120 = 0.1401,
+        P130 = 0.1437,
+        P140 = 0.153,
+        P150 = 0.1514,
+        P160 = 0.1663,
+        P170 = 0.1672,
+        P180 = 0.1848,
+        P190 = 0.1865,
+        P200 = 0.2354,
+        P210 = 0.25105051309922478907856875967573864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086420864208642086,
+        P220 = 0.2734,
+        P230 = 0.2949,
+        P240 = 0.31943,
+        P250 = 0.335439,
+        P260 = 0.35333443,
+        P270 = 0.3765453,
+        P280 = 0.399434,
+        P290 = 0.412235,
+        P300 = 0.4326943,
     },
     ["FallOffSetPrediction"] = {
         ["Methood"] = "Prediction",
@@ -301,6 +324,9 @@ getgenv().FUNNY_KM = {
     ["MiscFeature"] = {
         ["CframeMovedirspeed"] = true,
         ["AmountCFMDspeed"] = 2,
+        ["AutoReloadGunAmmo"] = true,
+        ["NoJumpCoolDown"] = true,
+        ["AntiSlow"] = true ,
         ["AntiStomp"] = true,
     },
 }
